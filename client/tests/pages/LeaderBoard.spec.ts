@@ -11,12 +11,12 @@ test.describe('LeaderBoard Component', () => {
   test('should render the leaderBoard with necessary elements', async ({ page }) => {
     // Verify that the positions are rendered correctly
     const first = await page.getByText("Tristan -");
-    //const second = await page.getByText("Lyra -");
+    const second = await page.getByText("Lyraa -");
     let third = await page.getByText(":) -");
 
 
     await expect(first).toBeVisible();
-    //await expect(second).toBeVisible();
+    await expect(second).toBeVisible();
     await expect(third).toBeVisible();
 
     // Verify the leaderboard displays correctly

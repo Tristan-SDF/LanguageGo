@@ -14,6 +14,7 @@ test("testing getScore and storeScore", async () => {
   await expect(response.score[0].score).toBe(120);
   await expect(response.score[0].tag).toBe(":)");
   
+
   //Updating the user score 
   await fetch(
     "http://localhost:3232/storeScore?userid=111&score=10"
